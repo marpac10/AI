@@ -1,0 +1,19 @@
+Phase: jurisprudence
+Input: Token Lookup
+Options: control = brill
+
+Rule: law
+(
+ {Token.string == "law"  }
+
+):orgJurisprudence
+-->
+:orgJurisprudence.myrule = {rule = "law"}
+
+Rule: institutions
+(
+ {Token.string == "institutions"  }
+
+):orgJurisprudence
+-->
+:orgJurisprudence.myrule = {rule = "institutions"}
